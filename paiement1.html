@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="paiment.css">
+    <link rel="stylesheet" href="styles/paiment.css">
 </head>
 <body>
     <div class="paiment_container">
         <div class="paiement_page">
             <div class="left">
-                <img src="paiment.jpg" alt="">
+                <img src="images/paiment.jpg" alt="">
             </div>
             <div class="right">
                 <div class="services">
@@ -31,63 +31,68 @@
                         <h2 class="total_price">Price</h2>
                     </div>
                 </div>
-                <div class="payment_form">
-                    <h1 class="payment_title">Payment information</h1>
-                    <label for="" class="pa_inpt">Name on cridit card</label><br>
-                    <input type="text" name="" id="" class="inputofpayement" placeholder="Name"><br>
-                    <label for="cr_nbr" class="pa_inpt">CRIDIT CARD NUMBER</label><br>
-                    <input type="number" name="" id="" class="inputofpayement" placeholder="XXXX XXXX XXXX XXXX"><br>
-                    <label for="" class="pa_inpt">EXPIRES ON</label>
-                    <div class="date_pay">
-                        <select name="exp_month" id="" class="exp_month inputofpayement">
-                            <option value="january" selected>January</option>
-                            <option value="february">February</option>
-                            <option value="march">March</option>
-                            <option value="april">April</option>
-                            <option value="may">May</option>
-                            <option value="june">June</option>
-                            <option value="july">July</option>
-                            <option value="august">August</option>
-                            <option value="september">September</option>
-                            <option value="october">October</option>
-                            <option value="november">November</option>
-                            <option value="december">December</option>
-                        </select>
-                        <select name="exp_year" id="" class="exp_year inputofpayement">
-                            <option value="2022">2022</option>
-                            <option value="2023">2023</option>
-                            <option value="2024" selected>2024</option>
-                            <option value="2025">2025</option>
-                            <option value="2026">2026</option>
-                            <option value="2027">2027</option>
-                            <option value="2028">2028</option>
-                            <option value="2029">2029</option>
-                            <option value="2030">2030</option>
-                            <option value="2031">2031</option>
-                            <option value="2032">2032</option>
-                            <option value="2033">2033</option>
-                            <option value="2034">2034</option>
-                            <option value="2035">2035</option>
-                            <option value="2036">2036</option>
-                            <option value="2037">2037</option>
-                            <option value="2038">2038</option>
-                            <option value="2039">2039</option>
-                            <option value="2040">2040</option>
-                        </select>
-                    </div>
-                    <label for="" class="pa_inpt">CVC</label><br>
+                <form action="">
+                    <div class="payment_form">
+                        <h1 class="payment_title">Payment information</h1>
+                        <label for="" class="pa_inpt">Name on cridit card</label><br>
+                        <input type="text" name="" id="" class="inputofpayement" placeholder="Name" required><br>
+                        <label for="cr_nbr" class="pa_inpt">CRIDIT CARD NUMBER</label><br>
+                        <input type="number" name="" id="" class="inputofpayement" required placeholder="XXXX XXXX XXXX XXXX"><br>
+                        <label for="" class="pa_inpt">EXPIRES ON</label>
+                        <div class="date_pay">
+                            <select name="exp_month" id="" class="exp_month inputofpayement" required>
+                                <option value="january" selected>January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                            <select name="exp_year" id="" class="exp_year inputofpayement" required>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024" selected>2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                <option value="2028">2028</option>
+                                <option value="2029">2029</option>
+                                <option value="2030">2030</option>
+                                <option value="2031">2031</option>
+                                <option value="2032">2032</option>
+                                <option value="2033">2033</option>
+                                <option value="2034">2034</option>
+                                <option value="2035">2035</option>
+                                <option value="2036">2036</option>
+                                <option value="2037">2037</option>
+                                <option value="2038">2038</option>
+                                <option value="2039">2039</option>
+                                <option value="2040">2040</option>
+                            </select>
+                        </div>
+                        <label for="" class="pa_inpt">CVC</label><br>
 
-                    <input type="number" name="cvc" id="" placeholder="XXX" class="inputofpayement">
-                    
-                </div>
-                <div class="check">
-                    <input type="checkbox" name="agree">
-                    <label for="">I agree to the <a href="https://www.fstyres.co.uk/scripts/WebsiteTerms=2021.pdf">tearms of use.</a></label>
-                </div>
-                <button type="submit" class="pay_btn" onclick="location.href='hotel.html'">
-                    <img src="fermer-a-cle.png" alt="">
-                    <span>BOOK</span>
-                </button>
+                        <input type="number" name="cvc" id="" placeholder="XXX" class="inputofpayement" required>
+                        
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" name="agree" required>
+                        <label for="">I agree to the <a href="https://www.fstyres.co.uk/scripts/WebsiteTerms=2021.pdf">tearms of use.</a></label>
+                    </div>
+                    <button type="submit" class="pay_btn" onclick="pay()">
+                        <img src="icons/fermer-a-cle.png" alt="">
+                        <span>BOOK</span>
+                    </button>
+                    <button type="reset" class="Cancel_btn" onclick="go_back()">
+                        Cancel
+                    </button>
+                </form>
 
             </div>
 
@@ -95,4 +100,5 @@
     </div>
     
 </body>
+<script src="js/gotoh.js"></script>
 </html>

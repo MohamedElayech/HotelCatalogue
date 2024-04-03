@@ -1,0 +1,120 @@
+
+
+/* Debut news content */
+body{
+    margin: 0;
+    padding: 0;
+}
+.img-pub{
+    position: absolute;
+    right: 60px;
+    top: 600px;
+    display: grid;
+}
+.img-pub1{
+    margin-bottom: 50px;
+}
+.cont-deb{
+    /* border: 1px solid black; */
+    margin-left: 110px;
+    margin-top: 100px;
+    width: 850px;
+}
+.para-deb{
+    font-size: 18px;
+    font-weight: 500;
+}
+.newscontent{
+    margin-left: 110px;
+    margin-top: 50px;
+    /* border-style: dashed; */
+    /* border-color: gray; */
+    display: block;
+    /* justify-content: center; Centrage horizontal */
+    /* align-items: center; Centrage vertical */
+    height:1000px; 
+    width: 850px;
+}
+
+.news-image-para{
+    display: flex;
+    /* float: left; */
+    height: 170px;
+}
+.news1{
+    width: 260px;
+    height: 220;
+}
+.news2{
+    width: 290px;
+}
+.parag-news1{
+    padding-left: 20px;
+}
+/* contenu de parag-news1 */
+.son-container1-1{
+    color: red;
+    font-size: 15px;
+}
+.son-container1-2{
+    font-size: 20px;
+}
+.son-container1-4{
+    font-size: 11px;
+    color: rgba(74, 73, 73, 0.642);
+    
+}
+.parag-news1-hotel{
+    font-size: small;
+    font-weight:600;
+    color: red;
+    padding-top: 2px;
+}
+.parag-news1-titre{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.parag-news1-desc{
+    font-size:14px;
+        
+}
+.parag-news1-date{
+    font-size: x-small;
+    color: rgba(76, 76, 76, 0.614);
+}
+.newsdivsion{
+    margin-top: 24px;
+}
+
+/* FIN NEWS CONTENT */
+.News {
+    /* Styles pour votre bloc de nouvelles */
+     /* Pour centrer le texte horizontalement */
+    padding: 20px; /* Ajouter un peu d'espace autour du texte */
+}
+#title{
+    font-size:x-large;
+    font-family: monteserrat serif;
+    font-weight:bold;
+    width: 90%;
+}
+.container1{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+} 
+.Newspage{
+    width: 100%;
+}
+
+.underfilter{
+    position: absolute;
+    top: 47%;
+    left: 45%; 
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}   

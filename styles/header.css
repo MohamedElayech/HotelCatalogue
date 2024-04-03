@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: #F4694C;
+    height: 70px;
+    align-items: center;
+}
+.header-element{
+    font-family: Roboto;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.header-button{
+    width: 100px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    border-color: white;
+    background-color: #F4694C;
+    font-family: Roboto;
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    height: 30px;
+    font-weight: 500;
+    margin-left: 20px;
+    margin-right: 10px;
+
+}
+
+.left-header-flex{
+    display: flex; flex-direction: row; flex: 1;
+}
+
+.middle-header-flex{
+    display: flex; flex-direction: row; flex: 1; justify-content: space-around;
+}
+
+.right-header-flex{
+    display: flex;flex-direction: row; flex: 1; justify-content: end;
+}
+.middle-header-flex a{
+    font-style: none;
+    text-decoration: none;
+
+}
