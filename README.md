@@ -1,1 +1,1 @@
-# HotelCatalogue
+# HotelCatalog
