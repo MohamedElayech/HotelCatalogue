@@ -175,9 +175,9 @@
                             <option value="Breakfast" selected>Breakfast</option>
                         </select>
                     </td>
-                    <td class="price">300d</td>
+                    <td class="price" id="single">250 DT</td>
                     <td>
-                        <button onclick="location.href='paiement1.html'">BOOK NOW</button>
+                        <button onclick="location.href='paiement1.html'" id="single_book">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
@@ -193,9 +193,9 @@
                             <option value="Breakfast" selected>Breakfast</option>
                         </select>
                     </td>
-                    <td class="price">275 DT</td>
+                    <td class="price" id="double">235 DT</td>
                     <td>
-                        <button>BOOK NOW</button>
+                        <button id="double_pay">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
@@ -211,9 +211,9 @@
                             <option value="Breakfast" selected>Breakfast</option>
                         </select>
                     </td>
-                    <td class="price">250DT</td>
+                    <td class="price" id="triple">209DT</td>
                     <td>
-                        <button>BOOK NOW</button>
+                        <button id="triple_pay">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
@@ -229,9 +229,9 @@
                             <option value="Breakfast" selected>Breakfast</option>
                         </select>
                     </td>
-                    <td class="price">215 DT</td>
+                    <td class="price" id="quadruple">179 DT</td>
                     <td>
-                        <button>BOOK NOW</button>
+                        <button id="quadruple_pay">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
@@ -240,14 +240,14 @@
                         <span class="room_type">Suit</span>
                     </td>
                     <td>
-                        <select name="service" id="" class="hotel_select">
+                        <select name="service" id="" class="hotel_select" onselect="chose">
                             <option value="All_Inclusive">All Inclusive</option>
                             <option value="Full_board">Full board</option>
                             <option value="Half_board">Half board</option>
-                            <option value="Breakfast" selected>Breakfast</option>
+                            <option value="Breakfast" >Breakfast</option>
                         </select>
                     </td>
-                    <td class="price">400 DT</td>
+                    <td class="price" id="price">400 DT</td>
                     <td>
                         <button>BOOK NOW</button>
                     </td>
@@ -378,4 +378,5 @@
     </footer>
 </body>
 <script src="js/hotel1.js"></script>
+<script src="js/hotelprices.js"></script>
 </html>
