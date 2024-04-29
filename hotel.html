@@ -168,7 +168,7 @@
                         <span class="room_type">A single room</span>
                     </td>
                     <td>
-                        <select name="service" id="" class="hotel_select">
+                        <select name="service" id="select1" class="hotel_select" onchange="change1()">
                             <option value="All_Inclusive">All Inclusive</option>
                             <option value="Full_board">Full board</option>
                             <option value="Half_board">Half board</option>
@@ -177,7 +177,7 @@
                     </td>
                     <td class="price" id="single">250 DT</td>
                     <td>
-                        <button onclick="location.href='paiement1.html'" id="single_book">BOOK NOW</button>
+                        <button  id="single_book" onclick="single() ">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
@@ -186,7 +186,7 @@
                         <span class="room_type">Double chamber</span>
                     </td>
                     <td>
-                        <select name="service" id="" class="hotel_select">
+                        <select name="service" id="select2" class="hotel_select" onchange="change2()">
                             <option value="All_Inclusive">All Inclusive</option>
                             <option value="Full_board">Full board</option>
                             <option value="Half_board">Half board</option>
@@ -195,7 +195,7 @@
                     </td>
                     <td class="price" id="double">235 DT</td>
                     <td>
-                        <button id="double_pay">BOOK NOW</button>
+                        <button id="double_book">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
@@ -204,7 +204,7 @@
                         <span class="room_type">Triple bedroom</span>
                     </td>
                     <td>
-                        <select name="service" id="" class="hotel_select">
+                        <select name="service" id="select3" class="hotel_select" onchange="change3()">
                             <option value="All_Inclusive">All Inclusive</option>
                             <option value="Full_board">Full board</option>
                             <option value="Half_board">Half board</option>
@@ -213,7 +213,7 @@
                     </td>
                     <td class="price" id="triple">209DT</td>
                     <td>
-                        <button id="triple_pay">BOOK NOW</button>
+                        <button id="triple_book">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
@@ -222,7 +222,7 @@
                         <span class="room_type">Quadruple Room</span>
                     </td>
                     <td>
-                        <select name="service" id="" class="hotel_select">
+                        <select name="service" id="select4" class="hotel_select" onchange="change4()">
                             <option value="All_Inclusive">All Inclusive</option>
                             <option value="Full_board">Full board</option>
                             <option value="Half_board">Half board</option>
@@ -231,25 +231,26 @@
                     </td>
                     <td class="price" id="quadruple">179 DT</td>
                     <td>
-                        <button id="quadruple_pay">BOOK NOW</button>
+                        <button id="quadruple_book">BOOK NOW</button>
                     </td>
                 </tr>
                 <tr>
+                 
                     <td>
                         <img src="icons/suite.png" alt="">
                         <span class="room_type">Suit</span>
                     </td>
                     <td>
-                        <select name="service" id="" class="hotel_select" onselect="chose">
+                        <select name="service" id="select5" class="hotel_select" onchange="change5()">
                             <option value="All_Inclusive">All Inclusive</option>
                             <option value="Full_board">Full board</option>
                             <option value="Half_board">Half board</option>
-                            <option value="Breakfast" >Breakfast</option>
+                            <option value="Breakfast" selected>Breakfast</option>
                         </select>
                     </td>
-                    <td class="price" id="price">400 DT</td>
+                    <td class="price" id="suit">305 DT</td>
                     <td>
-                        <button>BOOK NOW</button>
+                        <button id="suit_book">BOOK NOW</button>
                     </td>
                 </tr>
             </table>
