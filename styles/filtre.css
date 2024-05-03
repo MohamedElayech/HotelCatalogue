@@ -1,66 +1,36 @@
+
+@import url(https://fonts.google.com/specimen/M+PLUS+Rounded+1c);
+
+:root{
+    --couleur-principale:#F4694C;
+}
+
 *{
     margin:0%;
     padding: 0%;
-}
+} 
 
-/* nav bar */
-#header{
-    background-color:  #F4694C;
-    height:  28px;
-    padding: 10px;
-    display:flex;
-    justify-content: flex-end;
-}
-/* li {
-    display:inline-flex;
-    margin-inline: 15px;
-    list-style-type: none;
-    justify-content: right;
-} */
-li a{
-    color: white;
-    text-decoration: none;
 
-}
-.logo{
-    margin-right: auto;
-    color: white;
-}
-.search{
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
-}
-.search-bar{
-    /* border: 1px solid white; */
-    margin-right: auto;
-    width: 30%;
-    
-    
-}
-/* fin navbar */
 
-/* Filtre */
+/* Filtre ****************************************************************** */
 .filtre{
     /* border: 2px solid black; */
     position:relative;
     top: 3%;  
-    left:220px;
+    left:150px;
     position: absolute;
     padding-top: 20px;
-    margin-top: 100px;
-    width: 70%;
+    margin-top: 180px;
+    width: 1200px;
     height: 150px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.152);
+    background-color: rgba(0, 0, 0, 0.122);
     box-shadow: 1px 1px 9px  white;
 }
 .title1{
     /* border: 1px solid white; */
     width: 70%;
-    margin-left: 15%;
+    margin-left: 90px;
     color: white;
 }
 .nom{
@@ -79,6 +49,7 @@ li a{
     
 }
 .image1{
+    
     height: 400px;
     width: 100%;
     
@@ -88,40 +59,63 @@ li a{
 .inputs{
     /* border: 2px solid white; */
     display:flex;
-    margin-left: 15%;  
-    width: 72%;
+    margin-left: 90px;  
+    width: 1060px;
     justify-content:space-between;
-    border-radius: 3px;
-    
+    border-radius: 3px;   
 }
+
+input[type="date"]{
+    border: none;
+    outline: none;
+    appearance: none;
+    width: 218px;
+    height:52px;
+    padding-left: 10px;
+    padding-right: 14px;
+    background-color: rgb(243, 245, 247);
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight:350px;
+    color: #00000077;
+    letter-spacing: 1px;
+    background: linear-gradient(150deg,#F4694C);
+    text-transform: uppercase;
+    font-family: -apple-system, Roboto, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.input1{
+    border: none;
+    outline: none;
+    width: 218px;
+    height: 52px;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 6px;
+   
+} 
 .bed{
+    /* border: 1px solid rgb(8, 7, 7); */
+
     width: 15px;
     height: 15px;
     position: absolute;
-    padding-top: 3px;
-    padding-left:2px ;
+    margin-top: 17px;
+    margin-left: 8px;
 }
-.input1{
-    border: 1px solid white;
-    width: 180px;
-    height: 38px;
-    padding-left: 2px;
-    background-color: white;
-    border-radius: 3px;
-}
-.input11{
-    padding-top: 8px;
-    padding-left: 2px;
-    
-}
+
 .input12{
     width: 140px;
     border:none;
-    outline: none;      /* pour enlever les bordures lorsqu'on clique sur input */
-    padding-left: 25px;
+    outline: none;   
+    margin-top: 8px;   
+    margin-left: 21px;
+    padding-top: 10px ;
+    padding-left: 5px;
+    
+    background-color: rgb(255, 255, 255);
 }
-
 .input2{
+    /* border: 1px solid black; */
     appearance: none;
     outline: none;
     border:none;
@@ -130,47 +124,146 @@ li a{
 
 }
 .input3{
+    /* border: 1px solid black; */
     appearance: none;
     outline: none;
     border:none;
     border-radius: 3px;
 }
-.input4{
-    appearance: none;
+.param{
+    /* border: 1px solid black; */
+    cursor: pointer;
+    border: none;
     outline: none;
-    border:none;
-    border-radius: 3px;
+    border-radius: 10px;
+    width: 220px;
+    height: 52px;
+    background-color:rgb(255, 255, 255) ; 
 }
+.tous{
+    padding-top: 10px;
+}
+.nb-per-ch{
+    display:none;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 7px;
+    width: 300px;
+    height: 200px;
+    margin-left: 810px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.decinc{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 38px;
+    width: 120px;
+    margin-top: 0px;
+    margin-left: 80px;
+}
+.data{
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 28px;
+    height: 26px;
+    margin-top: 5px;
+    font-size: large;
+    font-weight: 800;
+    padding-top: 3px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.inc{
+    height: 38px;
+    width: 38px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #F4694C ;
+    border-radius: 4px;
+    font-size: larger;
+    cursor: pointer;
+    color: #F4694C;
+    
+}
+.block-adults{
+    margin-top: 10px; 
+    
+    /* border: 1px solid black; */
+    display: flex;
+    height: 38px;
+}
+.adults{
+    /* border: 1px solid black; */
+    width: 76px;
+    height: 32px;
+    padding-top: 5px;
+    font-weight: 400;
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;;
+    margin-left: 8px;
+}
+
+#res-param{
+    /* border:1px solid black; */
+    font-size: 16px;
+    color: #0000006a;   
+}
+
+
+
+
+
+
+
+
+
 .button1{
     width: 120px;
-    border-radius: 3px;
+    height: 52px;
+    border-radius: 10px;
     background-color: #F4694C;
     border: 2px solid #F4694C;
+    cursor: pointer;
+    margin-bottom: 20px;
+    color: white;
+    font-size: large;
+    font-weight: 500;
 }
 
-/* Fin Filtre  */
+/* Fin Filtre ************************************************************* */
+
+
+
 
 .choice{
-    width: 88%;
+    width: 1200px;
     /* border: 1px solid black; */
     display: inline-flex;
     margin-top: 5%;
-    margin-left: 6%;
+    /* margin-left: 5px; */
     
 
 }
+/* .icone:hover{
+    box-shadow: 0 4px 6px 0  #f4684c83 , 0 6px 10px 0  #f4684c87 ;
+} */
 
 .icone{
     /* border: 1px solid green; */
-     
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-inline: 20px;
+    /* margin-left: 80px; */
+    margin-inline: 40px;
     border-radius: 10px;
     overflow:hidden;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    width: 25%;
+    width: 33%;
+    height:350px ;
     padding-bottom:10px ;
+}
+
+.hotelinfo{
+    /* border: 1px solid black; */
+    height: 48px;
+    width: 220px;
+
 }
 
 .image{
@@ -178,92 +271,171 @@ li a{
     height: 70%;
     box-shadow: 1px 1px 2px;
 }
-/* .image::before{
-    width: 110%;
-    height: 60%;
-    box-shadow: 1px 1px 2px; 
-} */
+
 .button{
-    background-color: #F4694C;
-    /* color: white; */
-    border-style: none;
-    width: 35%;
-    height: 42px;
-    margin-left: 5%;
-    
-    
+    background-color:white;
+    border:2px solid #F4694C;
+    border-radius: 8px;
+    width : 35%;
+    height : 42px;
+    /* margin-top: ; */
+    margin-left: 90px;
+    margin-bottom: 20px;
+      
 }
-/* .container{
-    color: yellow;
-} */
+.hotelinfo2{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+    height: 42px;
+}
+.hotelzone{
+    /* border: 1px solid black; */
+    margin-left: 12px;
+    display: flex;
+    height: 20px;
+    margin-top: 5px;
+}
+.locationicon{
+    width: 18px;
+    height: 18px;
+}
+.hotelrate{
+    /* border: 1px solid black; */
+    margin-top: 2px;
+    width: 90px;
+    height: 20px;
+    display: flex;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-bottom: 6px;
+}
+.listeimage{
+    /* border: 1px solid black; */
+    width: 13px;
+    margin-right: 4px;
+}
 
 
 .bis-filter{
     /* border: 1px solid black ; */
-    width: 90%;
     height: 185px;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* margin: auto; */
     margin: 0;
     border-radius: 8px;
     
     
 
 }
-.maps{
-    /* border: 1px solid black ; */
-    width: 200px;
-    height: 180px;
-    margin-left: 40px;
-    border-radius: 8px;
-}
+
 .filbutton{
     /* border: 1px solid black ; */
-    width: 740px;
+    width: 980px;
     height:50px ;
+    margin: auto;
     
 
+}
+
+.but1{
+    border: none;
+    width: 290px;
+    height: 55px;
+    border: 1px solid  #000000;
+    border-radius: 8px;
+    margin-right: 5px;
+    background-color: white;
+    color: #000000;
+    cursor:pointer;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+.but1:hover{
+    border-color: #F4694C;
+    color: #F4694C;
 }
 .sous-boutons{
     border: 1px solid #021f70;
-    height: 30px;
+    height: 35px;
     border-radius: 8px;
-    width: 732px;
+    width: 1182px;
     padding-top: 10px;
     padding-left: 5px;
-    margin-top: 12px;
+    margin-top: 10px;
+    margin-left: 210px;
+    font-size: 16px;
+    
     
 }
-.but1{
-    width: 182px;
-    height: 50px;
-    border: 2px solid  #F4694C;
-    border-radius: 8px;
-    margin-right: 0%;
-    background-color: white;
+.hotelname{
+    margin-left: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-size: large; */
+    font-weight:500;
+    
+}
+.hotelloc{
+    width:65px;
+}
+.sous-boutons:hover{
+    border-color: #F4694C;
     color: #F4694C;
-
 }
 .fieldset{
-    width: 160px;
+    /* border:none; */
+    width: 250px;
     border-radius: 8px;
-    height: 110px;
+    height: 150px;
     background-color: white;
+    border:1px solid #F4694C;
+    padding-left: 5px;
 }
 .partie2{
-    /* border:1px solid black; */
-    height: 110px;
+    border:1px solid  #F4694C;
+    height: 120px;
+    width: 1220px;
+    margin: auto;
     margin-top: 40px;
+    
+    
+}
+
+.filbutton{
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin-top: 6px;
     margin-left: 10px;
 }
+.sous-boutons{
+    margin-left: 10px;
+}
+.partie_milieu{
+    display: flex;
+    /* border:1px solid black; */
+
+}
 .partie3{
+    /* border:1px solid black; */
     margin-top: 28px;
     margin-left: 10px;
     
 }
-.partie4{
+
+.go_map{
+    /* border:1px solid black; */
+    width: 260px;
     margin-top: 28px;
-    margin-left: 10px;
-    height: 110px;
+    margin-left: 5px;
+}
+.maps{
+    /* border: 1px solid black ; */
+    width: 258px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+
+.checkbox:hover{
+    color: #F4694C;
 }

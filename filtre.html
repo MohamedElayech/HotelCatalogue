@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles/filtre.css" >
+    <link rel="stylesheet" href="./styles/filtre.css" >
     <!-- <link rel="stylesheet" href="hotel.css"> -->
-    <link rel="stylesheet" href="styles/header01.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <title>HotelCatalog</title>
+    <link rel="stylesheet" href="./styles/header01.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <script src="./js/filter.js"></script>
+    <title>Search</title>
 </head>
-<body>
+<body onkeydown="onkey()">
+
     <!-- header -->
     <nav class="bidaya">
         <img src="logo.png" alt="logo" class="nav_image"/> 
@@ -23,7 +25,7 @@
                 <li class="nav-item"><a class="nav_page" href="contactus.html">Contect us</a></li>
             </ul>
             <div id="nav_buttons">
-                <a href="profile.html"><img src="icons/petite-fille.png" alt="" class="profile_img"></a>
+                <a href="./profile.html"><img src="petite-fille.png" alt="" class="profile_img"></a>
             </div>
         </div>
         
@@ -33,10 +35,10 @@
 
 
 
-
+<!-- Premier filtre ************************************************* -->
     <section class="section1">
         <div class="touristique">
-            <img src="images/touristique.jpg" class="image1" >
+            <img src="./images/touristique.jpg" class="image1" >
         </div>
         
         <div class="filtre" id="filtre">
@@ -47,25 +49,70 @@
             <br>
             <div class="inputs">
                 <div class="input1">
-                    <div class="input11">
+                    
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="bed"><path d="M2.75 12h18.5c.69 0 1.25.56 1.25 1.25V18l.75-.75H.75l.75.75v-4.75c0-.69.56-1.25 1.25-1.25zm0-1.5A2.75 2.75 0 0 0 0 13.25V18c0 .414.336.75.75.75h22.5A.75.75 0 0 0 24 18v-4.75a2.75 2.75 0 0 0-2.75-2.75H2.75zM0 18v3a.75.75 0 0 0 1.5 0v-3A.75.75 0 0 0 0 18zm22.5 0v3a.75.75 0 0 0 1.5 0v-3a.75.75 0 0 0-1.5 0zm-.75-6.75V4.5a2.25 2.25 0 0 0-2.25-2.25h-15A2.25 2.25 0 0 0 2.25 4.5v6.75a.75.75 0 0 0 1.5 0V4.5a.75.75 0 0 1 .75-.75h15a.75.75 0 0 1 .75.75v6.75a.75.75 0 0 0 1.5 0zm-13.25-3h7a.25.25 0 0 1 .25.25v2.75l.75-.75h-9l.75.75V8.5a.25.25 0 0 1 .25-.25zm0-1.5A1.75 1.75 0 0 0 6.75 8.5v2.75c0 .414.336.75.75.75h9a.75.75 0 0 0 .75-.75V8.5a1.75 1.75 0 0 0-1.75-1.75h-7z"></path></svg>
-                    </div>
-                    <input type="text" class="input12">
+                    
+                    <input type="text" class="input12" placeholder="destination/Hotel name">
                 </div>                    
-                <input type="date" class="input2">
-                <input type="date" class="input3">
-                <input type="text" class="input4" value="on attend javascript'choix du nombre adulte ,enfant ,chambre' ">
-                <input type="button" class="button1" value="Search">
+                <input type="date" >
+                <input type="date">
+                <!--on attend javascript'choix du nombre adulte ,enfant ,chambre'-->
+                <button type="button" class="param" id="param" onclick="travailler()" ><span id="res-param"></span> </button>
+                
+                <button type="button" class="button1" value="Search" >Search</button>
 
+            </div>
+
+            <div class="nb-per-ch" id="nb-per-ch"  >
+                <div class="tous">
+                    <div class="block-adults">
+                        <p class="adults">Adults</p>
+                        <div class="decinc">
+                            <button type="button"  class="inc" id="dec1" >-</button>
+                             <span class="data" id="data1"></span>
+                            <button type="button"  class="inc" id="inc1">+</button>
+                    
+                        </div> 
+                    </div><br>
+    
+                    <div class="block-adults">
+                        <p class="adults">Children</p>
+                        <div class="decinc">
+                            <button type="button"  class="inc" id="dec2" >-</button>
+                             <span class="data" id="data2"></span>
+                            <button type="button"  class="inc" id="inc2">+</button>
+                    
+                        </div> 
+                    </div><br>
+                    <div class="block-adults">
+                        <p class="adults">Room</p>
+                        <div class="decinc">
+                            <button type="button"  class="inc" id="dec3" >-</button>
+                             <span class="data" id="data3"></span>
+                            <button type="button"  class="inc" id="inc3">+</button>
+                    
+                        </div> 
+                    </div>
+
+                </div>
+                     
             </div>
         </div><br>
         
     </section>
-    <section class="section1">
+
+
+
+
+
+
+<!-- Filtre 2 ******************************************************************** -->
+
+
+    <section class="section">
+
         <div class="bis-filter">
-            <div >
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.0450218914546!2d-122.4070510851945!3d37.80286321209485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807c3b5d6b9b%3A0xe781e1a58a6af5e7!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1642092734619!5m2!1sen!2sus" class="maps" ></iframe>
-            </div>
+    
             <div class="partie2">
                 <div class="filbutton">
                     <button class="but1">Our top picks</button>
@@ -73,129 +120,216 @@
                     <button class="but1">Star rating and price</button>
                     <button class="but1">Top reviewed</button>
                 </div>
-                <div class="sous-boutons">See the latest prices and deals by choosing your dates.<span><a href="filtre">Choose dates</a></span></div>
+                <div class="sous-boutons">See the latest prices and deals by choosing your dates.<span><a href="">Choose dates</a></span></div>
             </div>
-            <div class="partie3">
-                <form action="">
-                    <fieldset class="fieldset">
-                        <legend>filter</legend>
-                        <div>
-                            <input type="checkbox" id="checkbox1">
-                            <label for="checkbox1">5 stars</label>
+    
+        </div>  
+
+        <!-- La liste ddes hôtels  -->
+        <div class="partie_milieu"> 
+            <div class="partie_totale">
+                <div class="go_map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.262905563066!2d10.622407183128834!3d35.842556450296584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13027584510f3853%3A0x4a2185abf6d1d7c9!2sM%C3%B6venpick%20Sousse!5e0!3m2!1sen!2sus!4v1711147461204!5m2!1sen!2sus" class="maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                </div>
+                <div class="partie3">
+                    <form action="">
+                       <fieldset class="fieldset">
+                           <legend>filter</legend>
+                           <div>
+                               <input type="checkbox" id="checkbox1">
+                               <label for="checkbox1">5 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox2">
+                               <label for="checkbox2">4 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox3">
+                               <label for="checkbox3">3 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox4">
+                               <label for="checkbox4">2 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox4">
+                               <label for="checkbox4">1 stars</label>
+                           </div>
+                           
+                       </fieldset>
+                    </form>
+                   </div>
+       
+                   <div class="partie3">
+                       <fieldset class="fieldset">
+                           <legend>Review score</legend>
+                           <div>
+                               <input type="checkbox" id="checkbox1">
+                               <label for="checkbox1">Superb: 9+</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox2">
+                               <label for="checkbox2">Very good: 8+</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox3">
+                               <label for="checkbox3">Good: 7+</label>
+                           </div>
+                   
+                           <div>
+                               <input type="checkbox" id="checkbox4">
+                               <label for="checkbox4">Plesant: 6+</label>
+                           </div>  
+                       </fieldset>
+                       
+                   </div>
+            </div>
+            <div class="total_choice">
+                <div class="choice">
+                    <div class="icone" id="ic11" onclick="location.href='hotel.html'">
+                        <img src="./images/Sentido_Bellevue_Park_5.jpg" alt="icone1" class="image">
+                        <div class="hotelinfo">
+                            <p class="hotelname">Hotel Amber El Fell</p>
+                            <ul class="hotelrate">
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                            </ul>
+                            
                         </div>
-                        <div>
-                            <input type="checkbox" id="checkbox2">
-                            <label for="checkbox2">4 stars</label>
+                        <div class="hotelinfo2">
+                            <div class="hotelzone">
+                                <img src="./icons/location_on_FILL0_wght400_GRAD0_opsz24.png" alt="locationicon" class="locationicon">
+                                <p class="hotelloc">Hammamet</p>
+                            </div>
+                            <button type="button" class="button" >300$/Day</button>
                         </div>
-                        <div>
-                            <input type="checkbox" id="checkbox3">
-                            <label for="checkbox3">3 stars</label>
+                    </div>
+                    <div class="icone" id="ic12" onclick="location.href='hotel.html'">
+                        <img src="./images/view-from-our-room.jpg" alt="icone2" class="image">
+                        <div class="hotelinfo">
+                            <p class="hotelname">Hotel Royal ASBU</p>
+                            <ul class="hotelrate">
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                               
+                            </ul>
+                            
                         </div>
-                        <div>
-                            <input type="checkbox" id="checkbox4">
-                            <label for="checkbox4">2 stars</label>
+                        <div class="hotelinfo2">
+                            <div class="hotelzone">
+                                <img src="./icons/location_on_FILL0_wght400_GRAD0_opsz24.png" alt="locationicon" class="locationicon">
+                                <p class="hotelloc">Marsa</p>
+                            </div>
+                            <button type="button" class="button" >85$/Day</button>
                         </div>
-                        <div>
-                            <input type="checkbox" id="checkbox4">
-                            <label for="checkbox4">1 stars</label>
+                    </div>
+                    <div class="icone" id="ic13" onclick="location.href='hotel.html'">
+                        <img src="./images/hotel2.jpg" alt="icone3" class="image">
+                        <div class="hotelinfo">
+                            <p class="hotelname">Royal Thalassa Monastir</p>
+                            <ul class="hotelrate">
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                
+                            </ul>
+                            
+                        </div>
+                        <div class="hotelinfo2">
+                            <div class="hotelzone">
+                                <img src="./icons/location_on_FILL0_wght400_GRAD0_opsz24.png" alt="locationicon" class="locationicon">
+                                <p class="hotelloc">Monastir</p>
+                            </div>
+                            <button type="button" class="button" >120$/Day</button>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+        
+                <!-- deuxième ligne des hôtels -->
+                <div class="choice">
+                    <div class="icone" id="img21" >
+                        <img src="./images/hotel4.jpg" alt="icone1" class="image">
+                        <div class="hotelinfo">
+                            <p class="hotelname"> ADAM Hotel Suites</p>
+                            <ul class="hotelrate">
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                            </ul>   
+                        </div>
+                        <div class="hotelinfo2">
+                            <div class="hotelzone">
+                                <img src="./icons/location_on_FILL0_wght400_GRAD0_opsz24.png" alt="locationicon" class="locationicon">
+                                <p class="hotelloc">Lac</p>
+                            </div>
+                            <button type="button" class="button" >250$/Day</button>
                         </div>
                         
-                    </fieldset>
-                </form>
-            </div>
-            <div class="partie4">
-                <fieldset class="fieldset">
-                    <legend>Review score</legend>
-                    <div>
-                        <input type="checkbox" id="checkbox1">
-                        <label for="checkbox1">Superb: 9+</label>
                     </div>
-                    <div>
-                        <input type="checkbox" id="checkbox2">
-                        <label for="checkbox2">Very good: 8+</label>
+                    <div class="icone" id="img22">
+                        <img src="./images/365177532.jpg" alt="icone2" class="image">
+                        <div class="hotelinfo">
+                            <p class="hotelname">Marigold Hotel</p>
+                            <ul class="hotelrate">
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="hotelinfo2">
+                            <div class="hotelzone">
+                                <img src="./icons/location_on_FILL0_wght400_GRAD0_opsz24.png" alt="locationicon" class="locationicon">
+                                <p class="hotelloc">Tunis</p>
+                            </div>
+                            <button type="button" class="button" >80$/Day</button>
+                        </div>
                     </div>
-                    <div>
-                        <input type="checkbox" id="checkbox3">
-                        <label for="checkbox3">Good: 7+</label>
+                    <div class="icone" id="img23">
+                        <img src="./images/hotelimagelast.jpeg" alt="icone3" class="image">
+                        <div class="hotelinfo"> 
+                            <p class="hotelname">Iberostar AverroesUne</p>
+                            <ul class="hotelrate">
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                                <li class="listeimage"><img src="./icons/star.png" alt="listeimage"></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="hotelinfo2">
+                            <div class="hotelzone">
+                                <img src="./icons/location_on_FILL0_wght400_GRAD0_opsz24.png" alt="locationicon" class="locationicon">
+                                <p class="hotelloc">Hammamet</p>
+                            </div>
+                            <button type="button" class="button" >180$/Day</button>
+                        </div>
                     </div>
-            
-                    <div>
-                        <input type="checkbox" id="checkbox4">
-                        <label for="checkbox4">Plesant: 6+</label>
-                    </div>  
-                </fieldset>
-                
-            </div>
-        </div>        
-        <div class="choice">
-            <div class="icone" id="ic11" onclick="location.href='hotel.html'">
-                <img src="hotel images/img6.jpg" alt="icone1" class="image">
-                <div>
-                    <p>Royal Thalassa Monastir</p><br>
-                     
-                    <button type="button" class="button" >300$/Day</button>
+                    
+                   
                 </div>
-            </div>
-            <div class="icone" id="ic12" onclick="location.href='hotel2.html'">
-                <img src="hotel images/img13.webp" alt="icone2" class="image">
-                <div>
-                    <p>Fiesta Beach Djerba</p><br>
-                    <button type="button" class="button">300$/Day</button>
-                </div>
-            </div>
-            <div class="icone" id="ic13" onclick="location.href='hotel.html'">
-                <img src="images/hotel2.jpg" alt="icone3" class="image">
-                <div>
-                    <p>nom de l'hôtel</p><br>
-                    <button type="button" class="button">300$/Day</button>
-                </div>
-            </div>
-            <div class="icone" id="ic14">
-                <img src="images/hotel3.jpg" alt="icone3" class="image">
-                <div>
-                    <p>nom de l'hôtel</p><br>
-                    <button type="button" class="button">300$/Day</button>
-                </div>
-            </div>
-           
-        </div>
 
-        <!-- deuxième ligne des hôtels -->
-        <div class="choice">
-            <div class="icone" id="img21" >
-                <img src="images/hotel4.jpg" alt="icone1" class="image">
-                <div>
-                    <p>Royal Thalassa Monastir</p><br>
-                    <button type="button" class="button" >300$/Day</button>
-                </div>
             </div>
-            <div class="icone" id="img22">
-                <img src="images/365177532.jpg" alt="icone2" class="image">
-                <div>
-                    <p>nom de l'hôtel</p><br>
-                    <button type="button" class="button">300$/Day</button>
-                </div>
-            </div>
-            <div class="icone" id="img23">
-                <img src="hotel images/img.jpg" alt="icone3" class="image">
-                <div>
-                    <p>nom de l'hôtel</p><br>
-                    <button type="button" class="button">300$/Day</button>
-                </div>
-            </div>
-            <div class="icone" id="img24">
-                <img src="hotel images/img4.jpg" alt="icone3" class="image">
-                <div>
-                    <p>nom de l'hôtel</p><br>
-                    <button type="button" class="button">300$/Day</button>
-                </div>
-            </div>
-           
+            
+
+
         </div>
+        
+       
         
     </section><br><br><br>
     
-    <!-- footer -->
+    <!-- footer ***************************************************** -->
     <hr width="90%">
     <footer class="nihaya">
         
@@ -213,15 +347,15 @@
                 <ul class="contact_icons">
                     <li class="icon facebook">
                         <span class="illi_bach_yatla3">Facebook</span>
-                        <a href="https://www.facebook.com/search/posts/?q=hotel%20reservation" class="fab"><img src="icons/facebook.png" alt=""></a>
+                        <a href="#" class="fab"><img src="facebook.png" alt=""></a>
                     </li>
                     <li class="icon twitter">
                         <span class="illi_bach_yatla3">Twitter</span>
-                        <a href="https://twitter.com/hotel_engine?lang=fr" class="fab"><img src="icons/twitter.png" alt=""></a>
+                        <a href="#" class="fab"><img src="twitter.png" alt=""></a>
                     </li>
                     <li class="icon instagram">
                         <span class="illi_bach_yatla3">Instagram</span>
-                        <a href="https://www.instagram.com/explore/tags/hotelreservation/?hl=fr" class="fab"><img src="icons/instagram.png" alt=""></a>
+                        <a href="#" class="fab"><img src="instagram.png" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -250,6 +384,8 @@
             <p class="copyright"> copyright - All Right Reseved</p>
         </div>
     </footer>
+
+    
     
 </body>
 </html>
