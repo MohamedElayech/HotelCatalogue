@@ -13,6 +13,17 @@ body{
 }
 .img-pub1{
     margin-bottom: 50px;
+    cursor: pointer;
+}
+.img-pub2{
+    
+    cursor: pointer;
+}
+.img-pub1:hover{
+    box-shadow: 4px 4px 20px;
+}
+.img-pub2:hover{
+    box-shadow: 4px 4px 20px;
 }
 .cont-deb{
     /* border: 1px solid black; */
@@ -43,7 +54,8 @@ body{
 }
 .news1{
     width: 260px;
-    height: 220;
+    height: 170px;
+    
 }
 .news2{
     width: 290px;
@@ -86,8 +98,16 @@ body{
 }
 .newsdivsion{
     margin: 4vh 2vw;
+    cursor: pointer;
+    padding: 2vh 2vw;
+    height: auto;
 }
-
+.newsdiv{
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px;
+    padding: 2vh 2vw;
+}
 /* FIN NEWS CONTENT */
 .News {
     /* Styles pour votre bloc de nouvelles */
@@ -120,7 +140,7 @@ body{
 }   
 
 .disch1{
-    opacity: 0;
+    display: none;
     margin: 20px;
 
 }
