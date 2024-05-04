@@ -17,11 +17,15 @@
     /* border: 2px solid black; */
     position:relative;
     top: 3%;  
-    left:220px;
+    left:150px;
     position: absolute;
     padding-top: 20px;
+
+    margin-top: 180px;
+
     
     margin-top: 150px;
+
     width: 1200px;
     height: 150px;
     border-radius: 10px;
@@ -142,6 +146,41 @@ input[type="date"]{
     background-color:rgb(255, 255, 255) ; 
 }
 .tous{
+
+    padding-top: 10px;
+}
+.nb-per-ch{
+    display:none;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 7px;
+    width: 300px;
+    height: 200px;
+    margin-left: 810px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.decinc{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 38px;
+    width: 120px;
+    margin-top: 0px;
+    margin-left: 80px;
+}
+.data{
+    /* border: 1px solid black; */
+    text-align: center;
+    width: 28px;
+    height: 26px;
+    margin-top: 5px;
+    font-size: large;
+    font-weight: 800;
+    padding-top: 3px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
     /* border: 1px solid black; */
     margin-top: 5px;
 }
@@ -176,6 +215,7 @@ input[type="date"]{
     font-family:'Times New Roman', Times, serif;
 
 }
+
 .inc{
     height: 38px;
     width: 38px;
@@ -205,8 +245,14 @@ input[type="date"]{
 }
 
 #res-param{
+
+    /* border:1px solid black; */
+    font-size: 16px;
+    color: #0000006a;   
+
     border:1px solid black;
     
+
 }
 
 
@@ -219,10 +265,19 @@ input[type="date"]{
 
 .button1{
     width: 120px;
+
+    height: 52px;
+
     border-radius: 10px;
     background-color: #F4694C;
     border: 2px solid #F4694C;
     cursor: pointer;
+
+    margin-bottom: 20px;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+
 }
 
 /* Fin Filtre ************************************************************* */
@@ -235,21 +290,36 @@ input[type="date"]{
     /* border: 1px solid black; */
     display: inline-flex;
     margin-top: 5%;
+
+    /* margin-left: 5px; */
+
     margin-left: 40px;
+
     
 
 }
+/* .icone:hover{
+    box-shadow: 0 4px 6px 0  #f4684c83 , 0 6px 10px 0  #f4684c87 ;
+} */
 
 .icone{
     /* border: 1px solid green; */
-     
+
     /* margin-left: 80px; */
     margin-inline: 40px;
     border-radius: 10px;
     overflow:hidden;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
-    width: 25%;
+    width: 33%;
+    height:350px ;
     padding-bottom:10px ;
+}
+
+.hotelinfo{
+    /* border: 1px solid black; */
+    height: 48px;
+    width: 220px;
+
 }
 
 .image{
@@ -257,32 +327,56 @@ input[type="date"]{
     height: 70%;
     box-shadow: 1px 1px 2px;
 }
-/* .image::before{
-    width: 110%;
-    height: 60%;
-    box-shadow: 1px 1px 2px; 
-} */
+
 .button{
-    background-color: #F4694C;
-    /* color: white; */
-    border-style: none;
-    width: 35%;
-    height: 42px;
-    margin-left: 5%;
-    
-    
+    background-color:white;
+    border:2px solid #F4694C;
+    border-radius: 8px;
+    width : 35%;
+    height : 42px;
+    /* margin-top: ; */
+    margin-left: 90px;
+    margin-bottom: 20px;
+      
 }
-/* .container{
-    color: yellow;
-} */
+.hotelinfo2{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 100%;
+    height: 42px;
+}
+.hotelzone{
+    /* border: 1px solid black; */
+    margin-left: 12px;
+    display: flex;
+    height: 20px;
+    margin-top: 5px;
+}
+.locationicon{
+    width: 18px;
+    height: 18px;
+}
+.hotelrate{
+    /* border: 1px solid black; */
+    margin-top: 2px;
+    width: 90px;
+    height: 20px;
+    display: flex;
+    list-style-type: none;
+    margin-left: 15px;
+    margin-bottom: 6px;
+}
+.listeimage{
+    /* border: 1px solid black; */
+    width: 13px;
+    margin-right: 4px;
+}
 
 
 .bis-filter{
     /* border: 1px solid black ; */
     height: 185px;
     display: flex;
-    /* flex-wrap: wrap; */
-    /* margin: auto; */
     margin: 0;
     border-radius: 8px;
     
@@ -301,14 +395,23 @@ input[type="date"]{
 
 .but1{
     border: none;
+
+    width: 290px;
+    height: 55px;
+
     width: 235px;
     height: 50px;
+
     border: 1px solid  #000000;
     border-radius: 8px;
     margin-right: 5px;
     background-color: white;
     color: #000000;
     cursor:pointer;
+
+    font-size: 16px;
+    font-weight: 500;
+
 
 }
 .but1:hover{
@@ -317,31 +420,73 @@ input[type="date"]{
 }
 .sous-boutons{
     border: 1px solid #021f70;
-    height: 30px;
+    height: 35px;
     border-radius: 8px;
-    width: 732px;
+    width: 1182px;
     padding-top: 10px;
     padding-left: 5px;
+
+    margin-top: 10px;
+    margin-left: 210px;
+    font-size: 16px;
+    
+    
+}
+.hotelname{
+    margin-left: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* font-size: large; */
+    font-weight:500;
+    
+}
+.hotelloc{
+    width:65px;
+}
+
     margin-top: 5px;
     margin-left: 210px;
     
 }
+
 .sous-boutons:hover{
     border-color: #F4694C;
     color: #F4694C;
 }
 .fieldset{
+
+    /* border:none; */
+
     width: 250px;
     border-radius: 8px;
     height: 150px;
     background-color: white;
+    border:1px solid #F4694C;
+    padding-left: 5px;
 }
 .partie2{
+
+    border:1px solid  #F4694C;
+    height: 120px;
+    width: 1220px;
+    margin: auto;
+
     /* border:1px solid black; */
     height: 110px;
     width: 1400px;
     
+
     margin-top: 40px;
+    
+    
+}
+
+.filbutton{
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+.sous-boutons{
     margin-left: 10px;
 }
 .partie_milieu{
@@ -360,7 +505,11 @@ input[type="date"]{
     /* border:1px solid black; */
     width: 260px;
     margin-top: 28px;
+
+    margin-left: 5px;
+
     margin-left: 10px;
+
 }
 .maps{
     /* border: 1px solid black ; */
@@ -368,9 +517,13 @@ input[type="date"]{
     height: 200px;
     border-radius: 8px;
 }
+
+
+
 .button{
     cursor: pointer;
 }
+
 
 .checkbox:hover{
     color: #F4694C;

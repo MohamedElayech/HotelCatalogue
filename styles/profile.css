@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
 }
+
+
 header{
     /* border: 1px solid black; */
     background-color: #F4694C ;
@@ -41,9 +43,11 @@ a{
 
 .fondprincipale{
     display: flex;
+    /* border: 1px solid white; */
+
 }
 .details{
-    /* border: 1px solid black; */
+    border: 1px solid #F4694C;
     width: 60%;
     float: right;
     margin-right: 20px;
@@ -51,30 +55,38 @@ a{
     margin-top: 60px;
     border-radius: 10px;
     margin-right: 10px;
-    box-shadow: 2px 2px 2px 2px  rgba(0, 0, 0, 0.319),2px 2px 2px 2px  rgba(0, 0, 0, 0.319);
-    border: 0.5px rgb(82, 81, 81);
+    
 }
+
 .pdp{
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
     margin-top:60px;
     margin-left: 100px;
     width:240px;
     height: 250px;
 }
+.pdpimg{
+    /* border: 1px solid white;  */
+    width:190px ;
+    height: 200px;
+    margin-left: 20px;
+}
 .nomprofil{
+    /* border: 1px solid white; */
     text-align: center;
+    color: white;
 }
 
 
 .division1{
-    /* border: 1px solid black; */
-    height: 320px;
+    /* border: 1px solid white; */
+    height: 220px;
     width: 42%;
     margin-left: 60px;
 }
 .division2{
     /* border: 1px solid black; */
-    height: 320px;
+    height: 220px;
     width: 42%;
     margin-left: 20px;
 
@@ -85,6 +97,7 @@ a{
     width: 200px;
     margin-top: 20px;
     margin-left: 20px;
+    color: white;
 }
 .divisionprincipale{
     display: flex;
@@ -92,29 +105,60 @@ a{
 }
     /* les inputs */
 .inputdiv{
+    padding-left: 5px;
     width: 88%;
-    height: 38px;
+    height: 45px;
     border-radius: 8px;
     border-color: white;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    background: none;
+    border: 1px solid #F4694C;
+    outline: none;
+
     
 }
+.inputdiv::placeholder{
+    color: white;
+    font-size: 15px;
+}
+input[type="date"]{
+    color: white;
+    font-size: 15px;
+}
+
+
 .fidélité{
     /* border: 1px solid rgba(55, 54, 54, 0.484); */
     margin-top: 30px;
     width: 100%;
     height: 110px;
     background-color:rgba(78, 77, 77, 0.33) ;
+    color: white;
+    margin-bottom: 40px;
+
 }
 .point{
+    
     border-radius: 1px;
-    margin-left: 42%;
-    margin-top: 30px;
+    margin:auto;
     font-size: larger;
+    width: 150px;
+    
 }
-.sp2 .sp1{
-    border: 1px solid black;
+.sp1{
+    
+    width: 130px;
+    margin: auto;
+    margin-bottom: 5px;
+    text-align: center;
 }
+.sp2{
+    
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
 .change_btn{
     padding: 5px;
     width: 150px;
@@ -122,4 +166,18 @@ a{
     color: white;
     float: right;
     border-radius: 10px 0 0 10px;
+}
+.historiquetab{
+    color: white;
+}
+
+table {
+    width: 100%;
+    /* border-collapse: collapse; */
+}
+
+th, td {
+    padding: 15px; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.362);
 }

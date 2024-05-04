@@ -11,8 +11,15 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb<=29){
             nb+=1;
             document.getElementById("data1").innerHTML = nb;
+
+            updateDisplay();
         }
         
+        
+
+        }
+        
+
     }
     const element2=document.getElementById("dec1");
     element2.addEventListener("click",decr)
@@ -20,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb>1){
             nb-=1;
             document.getElementById("data1").innerHTML=nb;
+
+            updateDisplay();
+
         }
     }
 
@@ -31,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb1<=29){
             nb1+=1;
             document.getElementById("data2").innerHTML = nb1;
+
+            updateDisplay();
+
         }
         
     }
@@ -40,6 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb1>0){
             nb1-=1;
             document.getElementById("data2").innerHTML=nb1;
+
+            updateDisplay();
+
         }
     }
    
@@ -52,6 +68,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb2<=29){
             nb2+=1;
             document.getElementById("data3").innerHTML = nb2;
+
+            updateDisplay();
+
         }
         
     }
@@ -61,6 +80,37 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb2>1){
             nb2-=1;
             document.getElementById("data3").innerHTML=nb2;
+
+            updateDisplay();
+        }
+    }
+
+
+    const element7 = document.getElementById("res-param");
+    function updateDisplay() {
+        element7.innerHTML = 'Adults ' + nb + ', Children ' + nb1 + ', Rooms ' + nb2;
+    }
+    updateDisplay(); 
+   
+    /*****************/ 
+    const element8 = document.getElementsByClassName("icone");
+    for (let i=0 ; i< element8.length ;i++){
+        element8[i].addEventListener("mouseover", putshadow);
+        element8[i].addEventListener("mouseout",removeshadow );
+
+    }
+    
+    function putshadow(){
+        this.style.boxShadow ="0 4px 6px 0  #f4684c83 , 0 6px 10px 0  #f4684c87";
+    }
+    function removeshadow(){
+        this.style.boxShadow="";      //Revenir à la valeur par défaut en css
+    }
+    
+   
+
+
+
         }
     }
 
@@ -70,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
    
    
+
     
 });
 
@@ -103,5 +154,7 @@ function travailler(){
         t-=1;
     }
 }
+
 var nbperch=document.getElementById("nb-per-ch");
 nbperch.innerHTML="adult"+ nb +"children" + nb1 +"Room"+nb2;
+
