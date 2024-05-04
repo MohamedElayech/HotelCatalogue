@@ -53,3 +53,7 @@ window.onload = setTimeout(()=> {
     move(12, 4);
     move(13, 7);
 },1000,4000);
+
+
+const audioElement = document.getElementById('song');
+audioElement.play();
