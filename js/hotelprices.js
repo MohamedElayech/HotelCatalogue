@@ -108,15 +108,35 @@ function change5(){
     price5.innerHTML=price+" DT"
     console.log(select5.value)
 }
-var period=""
+let period=""
+let price=0
+
+
 function single(){
-    let period1 = document.getElementById("select1");
+    // let period1 = document.getElementById("select1");
+    price=ps
+    period=select1.value
+    localStorage.setItem("price", price);
+    localStorage.setItem("period", period);
     location.href="paiement1.html"
-    period=period1.value
-    console.log(period)
+    
+    console.log(period+" "+price)
+    calculernbj()
 }
 var nbj=0
-console.log(period+ "a")
+ 
+window.onload = function() {
+    var storedPrice = localStorage.getItem("price");
+    let p=document.getElementById('pricep')
+    let storedPeriod = localStorage.getItem("period");
+    
+    // Use the retrieved values (storedPrice and storedPeriod) here
+    document.getElementById("infos").innerHTML = "You selected a single room " + storedPeriod + " for " + storedPrice + " DT per day.";
+    
+    // Call calculernbj() if needed (assuming dates are already selected)
+    // calculernbj();
+}
+
 function calculernbj() {
     let dateech = new Date(document.getElementById("dateech").value);
     let dateneg = new Date(document.getElementById("dateneg").value);
@@ -125,6 +145,9 @@ function calculernbj() {
     }
     const diff = dateneg.getTime() - dateech.getTime();
     nbj = Math.round(diff / (1000 * 3600 * 24) * 100) / 100;
+
     console.log(period+ "a")
     document.getElementById("days").innerHTML =nbj + " Days"+ period;
+    let p=document.getElementById('pricep')
+    p.innerHTML=storedPrice*nbj
 }
