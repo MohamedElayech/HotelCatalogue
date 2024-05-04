@@ -20,7 +20,12 @@
     left:150px;
     position: absolute;
     padding-top: 20px;
+
     margin-top: 180px;
+
+    
+    margin-top: 150px;
+
     width: 1200px;
     height: 150px;
     border-radius: 10px;
@@ -57,7 +62,7 @@
 
         /* les input */
 .inputs{
-    /* border: 2px solid white; */
+    border: 2px solid white;
     display:flex;
     margin-left: 90px;  
     width: 1060px;
@@ -141,6 +146,7 @@ input[type="date"]{
     background-color:rgb(255, 255, 255) ; 
 }
 .tous{
+
     padding-top: 10px;
 }
 .nb-per-ch{
@@ -174,6 +180,42 @@ input[type="date"]{
     font-family:'Times New Roman', Times, serif;
 
 }
+
+    /* border: 1px solid black; */
+    margin-top: 5px;
+}
+.nb-per-ch{
+    display:none;
+    /* border: 2px solid black; */
+    background-color: white;
+    border-radius: 7px;
+    width: 300px;
+    height: 200px;
+    margin-left: 810px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.decinc{
+    /* border: 1px solid black; */
+    display: flex;
+    height: 38px;
+    width: 120px;
+    margin-top: 0px;
+    margin-left: 80px;
+}
+.data{
+    /* border: 1px solid black; */
+    width: 28px;
+    height: 26px;
+    margin-top: 5px;
+    font-size: large;
+    font-weight: 800;
+    padding-top: 3px;
+    padding-left: 5px;
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
 .inc{
     height: 38px;
     width: 38px;
@@ -203,9 +245,14 @@ input[type="date"]{
 }
 
 #res-param{
+
     /* border:1px solid black; */
     font-size: 16px;
     color: #0000006a;   
+
+    border:1px solid black;
+    
+
 }
 
 
@@ -218,15 +265,19 @@ input[type="date"]{
 
 .button1{
     width: 120px;
+
     height: 52px;
+
     border-radius: 10px;
     background-color: #F4694C;
     border: 2px solid #F4694C;
     cursor: pointer;
+
     margin-bottom: 20px;
     color: white;
     font-size: large;
     font-weight: 500;
+
 }
 
 /* Fin Filtre ************************************************************* */
@@ -239,7 +290,11 @@ input[type="date"]{
     /* border: 1px solid black; */
     display: inline-flex;
     margin-top: 5%;
+
     /* margin-left: 5px; */
+
+    margin-left: 40px;
+
     
 
 }
@@ -249,6 +304,7 @@ input[type="date"]{
 
 .icone{
     /* border: 1px solid green; */
+
     /* margin-left: 80px; */
     margin-inline: 40px;
     border-radius: 10px;
@@ -339,16 +395,23 @@ input[type="date"]{
 
 .but1{
     border: none;
+
     width: 290px;
     height: 55px;
+
+    width: 235px;
+    height: 50px;
+
     border: 1px solid  #000000;
     border-radius: 8px;
     margin-right: 5px;
     background-color: white;
     color: #000000;
     cursor:pointer;
+
     font-size: 16px;
     font-weight: 500;
+
 
 }
 .but1:hover{
@@ -362,6 +425,7 @@ input[type="date"]{
     width: 1182px;
     padding-top: 10px;
     padding-left: 5px;
+
     margin-top: 10px;
     margin-left: 210px;
     font-size: 16px;
@@ -378,12 +442,20 @@ input[type="date"]{
 .hotelloc{
     width:65px;
 }
+
+    margin-top: 5px;
+    margin-left: 210px;
+    
+}
+
 .sous-boutons:hover{
     border-color: #F4694C;
     color: #F4694C;
 }
 .fieldset{
+
     /* border:none; */
+
     width: 250px;
     border-radius: 8px;
     height: 150px;
@@ -392,10 +464,17 @@ input[type="date"]{
     padding-left: 5px;
 }
 .partie2{
+
     border:1px solid  #F4694C;
     height: 120px;
     width: 1220px;
     margin: auto;
+
+    /* border:1px solid black; */
+    height: 110px;
+    width: 1400px;
+    
+
     margin-top: 40px;
     
     
@@ -426,13 +505,23 @@ input[type="date"]{
     /* border:1px solid black; */
     width: 260px;
     margin-top: 28px;
+
     margin-left: 5px;
+
+    margin-left: 10px;
+
 }
 .maps{
     /* border: 1px solid black ; */
     width: 258px;
     height: 200px;
     border-radius: 8px;
+}
+
+
+
+.button{
+    cursor: pointer;
 }
 
 

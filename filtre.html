@@ -11,7 +11,12 @@
     <script src="./js/filter.js"></script>
     <title>Search</title>
 </head>
+
 <body onkeydown="onkey()">
+
+
+<!-- <body onkeydown="onkey()"> -->
+<body >
 
     <!-- header -->
     <nav class="bidaya">
@@ -59,7 +64,11 @@
                 <!--on attend javascript'choix du nombre adulte ,enfant ,chambre'-->
                 <button type="button" class="param" id="param" onclick="travailler()" ><span id="res-param"></span> </button>
                 
+
                 <button type="button" class="button1" value="Search" >Search</button>
+
+                <input type="button" class="button1" value="Search" >
+
 
             </div>
 
@@ -185,6 +194,7 @@
                        
                    </div>
             </div>
+
             <div class="total_choice">
                 <div class="choice">
                     <div class="icone" id="ic11" onclick="location.href='hotel.html'">
@@ -313,6 +323,120 @@
                                 <p class="hotelloc">Hammamet</p>
                             </div>
                             <button type="button" class="button" >180$/Day</button>
+
+    
+        </div>  
+
+        <!-- La liste ddes hôtels  -->
+        <div class="partie_milieu"> 
+            <div class="partie_totale">
+                <div class="go_map" >
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.262905563066!2d10.622407183128834!3d35.842556450296584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13027584510f3853%3A0x4a2185abf6d1d7c9!2sM%C3%B6venpick%20Sousse!5e0!3m2!1sen!2sus!4v1711147461204!5m2!1sen!2sus" class="maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+                </div>
+                <div class="partie3">
+                    <form action="">
+                       <fieldset class="fieldset">
+                           <legend>filter</legend>
+                           <div>
+                               <input type="checkbox" id="checkbox1">
+                               <label for="checkbox1">5 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox2">
+                               <label for="checkbox2">4 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox3">
+                               <label for="checkbox3">3 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox4">
+                               <label for="checkbox4">2 stars</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox4">
+                               <label for="checkbox4">1 stars</label>
+                           </div>
+                           
+                       </fieldset>
+                    </form>
+                   </div>
+       
+                   <div class="partie3">
+                       <fieldset class="fieldset">
+                           <legend>Review score</legend>
+                           <div>
+                               <input type="checkbox" id="checkbox1">
+                               <label for="checkbox1">Superb: 9+</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox2">
+                               <label for="checkbox2">Very good: 8+</label>
+                           </div>
+                           <div>
+                               <input type="checkbox" id="checkbox3">
+                               <label for="checkbox3">Good: 7+</label>
+                           </div>
+                   
+                           <div>
+                               <input type="checkbox" id="checkbox4">
+                               <label for="checkbox4">Plesant: 6+</label>
+                           </div>  
+                       </fieldset>
+                       
+                   </div>
+            </div>
+            <div class="toltal_choice">
+                <div class="choice">
+                    <div class="icone" id="ic11" onclick="location.href='hotel.html'">
+                        <img src="./images/Sentido_Bellevue_Park_5.jpg" alt="icone1" class="image">
+                        <div>
+                            <p>Royal Thalassa Monastir</p><br>
+                             
+                            <button type="button" class="button" >300$/Day</button>
+                        </div>
+                    </div>
+                    <div class="icone" id="ic12" onclick="location.href='hotel.html'">
+                        <img src="./images/view-from-our-room.jpg" alt="icone2" class="image">
+                        <div>
+                            <p>nom de l'hôtel</p><br>
+                            <button type="button" class="button">300$/Day</button>
+                        </div>
+                    </div>
+                    <div class="icone" id="ic13" onclick="location.href='hotel.html'">
+                        <img src="./images/hotel2.jpg" alt="icone3" class="image">
+                        <div>
+                            <p>nom de l'hôtel</p><br>
+                            <button type="button" class="button">300$/Day</button>
+                        </div>
+                    </div>
+                   
+                   
+                </div>
+        
+                <!-- deuxième ligne des hôtels -->
+                <div class="choice">
+                    <div class="icone" id="img21" >
+                        <img src="./images/hotel4.jpg" alt="icone1" class="image">
+                        <div>
+                            <p>Royal Thalassa Monastir</p><br>
+                            <button type="button" class="button" >300$/Day</button>
+                        </div>
+                    </div>
+                    <div class="icone" id="img22">
+                        <img src="./images/365177532.jpg" alt="icone2" class="image">
+                        <div>
+                            <p>nom de l'hôtel</p><br>
+                            <button type="button" class="button">300$/Day</button>
+                        </div>
+                    </div>
+                    <div class="icone" id="img23">
+                        <img src="./images/365177532.jpg" alt="icone3" class="image">
+                        <div>
+                            <p>nom de l'hôtel</p><br>
+                            <button type="button" class="button">300$/Day</button>
+
                         </div>
                     </div>
                     

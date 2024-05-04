@@ -11,10 +11,15 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb<=29){
             nb+=1;
             document.getElementById("data1").innerHTML = nb;
+
             updateDisplay();
         }
         
         
+
+        }
+        
+
     }
     const element2=document.getElementById("dec1");
     element2.addEventListener("click",decr)
@@ -22,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb>1){
             nb-=1;
             document.getElementById("data1").innerHTML=nb;
+
             updateDisplay();
+
         }
     }
 
@@ -34,7 +41,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb1<=29){
             nb1+=1;
             document.getElementById("data2").innerHTML = nb1;
+
             updateDisplay();
+
         }
         
     }
@@ -44,7 +53,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb1>0){
             nb1-=1;
             document.getElementById("data2").innerHTML=nb1;
+
             updateDisplay();
+
         }
     }
    
@@ -57,7 +68,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb2<=29){
             nb2+=1;
             document.getElementById("data3").innerHTML = nb2;
+
             updateDisplay();
+
         }
         
     }
@@ -67,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if(nb2>1){
             nb2-=1;
             document.getElementById("data3").innerHTML=nb2;
+
             updateDisplay();
         }
     }
@@ -95,6 +109,17 @@ document.addEventListener("DOMContentLoaded", function() {
     
    
 
+
+
+        }
+    }
+
+
+    const element7=document.getElementById("res-param") ;
+    element7.textContent='adult'+nb+'        children'+ nb1 +'         Room' +nb2   ;
+
+   
+   
 
     
 });
@@ -129,4 +154,7 @@ function travailler(){
         t-=1;
     }
 }
+
+var nbperch=document.getElementById("nb-per-ch");
+nbperch.innerHTML="adult"+ nb +"children" + nb1 +"Room"+nb2;
 
