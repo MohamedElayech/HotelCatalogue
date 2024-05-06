@@ -85,7 +85,7 @@ body{
     color: rgba(76, 76, 76, 0.614);
 }
 .newsdivsion{
-    margin-top: 24px;
+    margin: 4vh 2vw;
 }
 
 /* FIN NEWS CONTENT */
@@ -118,3 +118,9 @@ body{
     font-weight: bolder;
     color: white;
 }   
+
+.disch1{
+    opacity: 0;
+    margin: 20px;
+
+}
