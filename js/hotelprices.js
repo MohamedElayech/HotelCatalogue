@@ -126,15 +126,14 @@ function single(){
 var nbj=0
  
 window.onload = function() {
-    var storedPrice = localStorage.getItem("price");
-    let p=document.getElementById('pricep')
+    let storedPrice = localStorage.getItem("price");
+    
     let storedPeriod = localStorage.getItem("period");
     
-    // Use the retrieved values (storedPrice and storedPeriod) here
+    
     document.getElementById("infos").innerHTML = "You selected a single room " + storedPeriod + " for " + storedPrice + " DT per day.";
     
-    // Call calculernbj() if needed (assuming dates are already selected)
-    // calculernbj();
+   
 }
 
 function calculernbj() {
@@ -145,9 +144,12 @@ function calculernbj() {
     }
     const diff = dateneg.getTime() - dateech.getTime();
     nbj = Math.round(diff / (1000 * 3600 * 24) * 100) / 100;
-
-    console.log(period+ "a")
-    document.getElementById("days").innerHTML =nbj + " Days"+ period;
+    console.log(nbj)
+    // console.log(period+ "a")
+    let price=localStorage.getItem("price")
+    let period = localStorage.getItem("period")
+    // document.getElementById("infos").innerHTML = "You selected a single room " + period + " for " + price + " DT per day.";
+    document.getElementById("days").innerHTML =nbj + " Days";
     let p=document.getElementById('pricep')
-    p.innerHTML=storedPrice*nbj
+    p.innerHTML=price*nbj + " DT"
 }
