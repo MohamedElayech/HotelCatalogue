@@ -4,60 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="styles/homebeforeregistration.css">
-    <!-- <link rel="stylesheet" href="./homebeforeregistration.css"> -->
-    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="./styles/header01.css">
+    <link rel="stylesheet" href="./homebeforeregistration.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="./homebeforeregistration.js"></script>
    
 </head>
-<body >
-
-    <div class="before-head">
-        <nav class="before-nav">
-            <img src="logo.png" class="logo" alt="">
-            <div class="connect">
-                <button class="before-login" onclick="location.href='LoginPage.html'">Login</button>
-                <button class="before-signun" onclick="location.href='signup.html'">Sign-up</button>
-            </div>
-        </nav>
-
-        <div id="slogan">Booking is never easier with HotelCatalog</div>
-
-        <div class="under-header-buttons">
-            <button class="get-started under-btn" onclick="location.href='signup.html'">
-                Get Started
-            </button>
-            <button class="explore under-btn" onclick="location.href='#explore'">
-                Explore
-            </button>
-        </div>
-        
-    </div>
-    <audio id="song" controls style="margin-left:20vw ; margin-top: 5vh; width: 60vw;">
-        <source src="audio/ttsmaker-file-2024-5-4-22-24-14.mp3" type="audio/mpeg" onloadedmetadata="this.play()">
-        
-      </audio>
+<body style="margin: 0;">
     
-    <div class="homedef" id="explore">
-        <div class="videos hidden3 hidden">
-            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/cR8mH08xNVw?si=MQN9ZHhobkUDriuI&amp;start=5&autoplay=1&mute=1" title="Tunisia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>        
-        </div> 
-        <div class="about-home hidden2 hidden">
-            <h1 class="about-title">HotelCatalog</h1>
-            <p class="about-description">
-                Escape the ordinary and unlock unforgettable experiences.  At <i>HotelCatalog</i>, our online reservation system puts the power of crafting your dream getaway at your fingertips. Search for your ideal dates, browse inviting room options, and secure your stay with a few simple clicks.  Book your haven today and discover why <i>HotelCatalog</i> is your perfect home away from home.
-            </p>
+        <div class="header">
+            <div class="left-header-flex"></div>
+            <div class="middle-header-flex">
+                <a href="signup.html"><div class="header-element">Home</div></a>
+                <a href="signup.html"><div class="header-element">News</div></a>
+                <a href="signup.html"><div class="header-element">Hotels</div></a>
+                <a href="signup.html"><div class="header-element">Contact Us</div></a>
+            </div>
+            
+            <div class="right-header-flex">
+                
+            </div>
         </div>
-    </div>
-    <div class="statistics">
+        <div id="slogan">Booking is never easier with HotelHunter</div>
         <div id="stats">
             
-            <div class="stat-unit hidden3 hidden">
+            <div class="stat-unit">
                 <div>
-                    <img class="logo1" src="images/user.png">
+                    <img class="logo" src="./images/user.png">
                 </div>
                 <div class="stat-div">
                     <div>
@@ -72,9 +50,9 @@
             </div>
         
            
-            <div class="stat-unit hidden">
+            <div class="stat-unit">
                 <div>
-                    <img class="logo1" src="images/2075831_accept_approve_check_true_icon.png">
+                    <img class="logo" src="./images/2075831_accept_approve_check_true_icon.png">
                 </div>
                 <div class="stat-div">
                     <div>
@@ -89,9 +67,9 @@
             </div>
         
             
-            <div class="stat-unit hidden3 hidden">
+            <div class="stat-unit">
                 <div>
-                    <img class="logo1" src="images/2075807_building_hostel_hotel_resort_icon.png">
+                    <img class="logo" src="./images/2075807_building_hostel_hotel_resort_icon.png">
                 </div>
                 <div class="stat-div">
                     <div>
@@ -104,119 +82,11 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="traveler-div">
-        <div class="traveler-flexbox">
-            <div class="traveler-text-div">
-                <div class="traveler-text-div-title hidden" >Start Your Journey Today In 3 Easy Steps </div>
-                <div class="choose-make-go-div">
-                    <div class="choose-flexbox hidden">
-                        <div class="choose-icon-div">
-                            <img src="images/boussole.png" class="choose-icon">
-                        </div>
-                        <div class="choose-lorem-div">
-                            <div class="choose-lorem-title-div">Choose destination</div>
-                            <div class="choose-lorem-text-div">Explore a wide selection of destinations, ranging from exotic beaches and vibrant cities
-                                to the calm and gorgeous Sahara. With diverse options, you 'll find your perfect spot
-                                where you can enjoy your vacations.
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="choose-flexbox hidden">
-                        <div class="choose-icon-div">
-                            <img src="images/paiement-securise.png" class="choose-icon">
-                        </div>
-                        <div class="choose-lorem-div">
-                            <div class="choose-lorem-title-div">Make a payment</div>
-                            <div class="choose-lorem-text-div">We made sure that your surfing experience will be secure. All your payments
-                                will be safe and secure with us. 
-                                
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="choose-flexbox hidden">
-                        <div class="choose-icon-div">
-                            <img src="images/les-vacances.png" class="choose-icon">
-                        </div>
-                        <div class="choose-lorem-div">
-                            <div class="choose-lorem-title-div">Go on a trip</div>
-                            <div class="choose-lorem-text-div">Once your booking is confirmed sit back, relax and be ready to live
-                                an amazing experience with us.Embrak on a journey filled with precious and unforgettable experiences,
-                            creating cheriched memories that will last a lifetime</div>
-                        </div>
-                    </div>
-
-                    <button class="guide-btn hidden" onclick="location.href='signup.html'">Let's Go</button>
-                </div>
-
-            </div>
-            <div class="traveler-pic-div">
-                <img src="images/Tunisia - Map.jpg" class="travaler-pic hidden4 hidden">
-            </div>
-        </div>
-    </div>
-
-
-
-
-    <div class="wrapper ">
-        <ul class="carousel">
-            <li class="card">
-            </li>
-            
-        </ul>
+        
+        
         
 
-    </div>
-    <hr width="90%" id="before-footer">
-    <footer class="nihaya">
-        
-        <div class="fb1">
-            <div class="felm">
-                <img src="logo.png" alt="logo" class="flogo"><br>
-                <div>
-                    <input type=" text" placeholder="Enter Email Address" class="fmail">
-                    <input type="button" value="Subscribe" class="fbutton">
-                </div>
-                <br>
-                <p class="faboutus">
-                    <i>subscribe to receive our news</i>
-                </p>
-                <ul class="contact_icons">
-                    <li class="icon facebook">
-                        <span class="illi_bach_yatla3">Facebook</span>
-                        <a href="https://www.facebook.com/search/posts/?q=hotel%20reservation" class="fab"><img src="icons/facebook.png" alt=""></a>
-                    </li>
-                    <li class="icon twitter">
-                        <span class="illi_bach_yatla3">Twitter</span>
-                        <a href="https://twitter.com/hotel_engine?lang=fr" class="fab"><img src="icons/twitter.png" alt=""></a>
-                    </li>
-                    <li class="icon instagram">
-                        <span class="illi_bach_yatla3">Instagram</span>
-                        <a href="https://www.instagram.com/explore/tags/hotelreservation/?hl=fr" class="fab"><img src="icons/instagram.png" alt=""></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="felm felm1" >
-                <ol class="footer_links">
-                    <li><a class="fline" href="homebeforeregistration.html">Home</a></li>
-                    <li><a class="fline" href="#explore">Explore</a></li>
-                    <li><a class="fline" href="contactus2.html">Contact us</a></li>
-                </ol>
-            </div>
-            
-        </div>
-            <hr id="line">
-            <div class="fb2">
-            <p class="copyright"> copyright - All Right Reseved</p>
-        </div>
-    </footer>
-
+    
+    
 </body>
-<script src="js/homeanimation.js">
-   
-</script>
 </html>

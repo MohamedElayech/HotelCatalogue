@@ -14,21 +14,21 @@
             </div>
             <div class="right">
                 <div class="services">
-                    <div id="infos"></div>
+                    <div class="infos">les donner prevue dans la page du hotel</div>
                     <div class="p_duree">
-                        
                         <div>
-                            <label for="" class="pa_inpt"> DATE :</label>
-                            <input type="date" name="date_deb_p" class="inputofpayement" id="dateech">
-                            <input type="date" name="date_fin_p" class="inputofpayement" id="dateneg" oninput="calculernbj()">
+                            <label for="" class="pa_inpt">Number of days :</label>
+                            <input type="number" name="nbjoursp" class="inputofpayement" >
                         </div>
                         <div>
-                            <p class="pa_inpt " id="days"> 0 Days</p>
+                            <label for="" class="pa_inpt"> DATE :</label>
+                            <input type="date" name="date_deb_p" class="inputofpayement">
+                            <input type="date" name="date_fin_p" class="inputofpayement">
                         </div>
                     </div>
                     <div class="total">
                         <h2 class="total_title">Total</h2>
-                        <h2 class="total_price" id="pricep">Price</h2>
+                        <h2 class="total_price">Price</h2>
                     </div>
                 </div>
                 <form action="">
@@ -101,5 +101,4 @@
     
 </body>
 <script src="js/gotoh.js"></script>
-<script src="js/hotelprices.js"></script>
 </html>
